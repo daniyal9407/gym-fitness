@@ -1,0 +1,420 @@
+@import url(../css/fonts/acumin-font/stylesheet.css);
+@import url(../css/fonts/satoshi-font-fam/stylesheet.css);
+
+body {
+    font-family: 'Acumin Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    font-family: 'Satoshi', sans-serif;
+}
+
+.site-btn {
+    min-width: 170px;
+    padding: 12px 25px;
+    background: #D8FB01;
+    border: 1px solid transparent;
+    font-weight: 600;
+    color: #000;
+    transition: .3s ease-in-out;
+}
+.site-btn:hover{
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    transition: .3s ease-in;
+}
+.border-btn {
+    min-width: 170px;
+    padding: 12px 25px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    font-weight: 600;
+    color: #FFFFFF;
+    transition: .3s ease-in-out;
+}
+.border-btn:hover{
+    background: #D8FB01;
+    border: 1px solid transparent;
+    color: #000;
+    transition: .3s ease-in;
+}
+/* header start */
+header {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+}
+
+.customNavItem {
+    color: #FFFFFF !important;
+}
+
+.customNavItem.active {
+    color: #D8FB01 !important;
+}
+.customNavItem:hover{
+    color: #D8FB01 !important;
+}
+/* header end */
+
+/* banner start */
+.banner {
+    min-height: 100vh;
+    padding: 150px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/banner-img.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.banner h6 {
+    color: #D8FB01;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #D9D9D9;
+    text-transform: uppercase;
+}
+
+.banner h1 span {
+    -webkit-text-fill-color: transparent;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+.banner p {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* banner end */
+
+/* count start */
+.count {
+    background: #D8FB01;
+    padding: 20px 0;
+}
+
+.count h2 {
+    font-weight: 700;
+}
+
+.count p {
+    font-weight: 600;
+}
+
+/* count end */
+
+/* training sec start */
+.training {
+    background: #202737;
+}
+
+.training-header h6 {
+    color: #D8FB01;
+    font-weight: 600;
+}
+
+.training-header h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #D9D9D9;
+    text-transform: uppercase;
+}
+
+.training-header h2 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+.training-card {
+    clip-path: polygon(0 0, 75% 0%, 100% 19%, 100% 100%, 25% 100%, 0 82%);
+    position: relative;
+
+    padding-bottom: 10px;
+}
+
+.training-card::before {
+position: absolute;
+content: '';
+top: 10px;
+right: 0;
+bottom: 0;
+content: '';
+width: 100%;
+height: 100%;
+background: #D8FB01;
+border-radius: 10px;
+z-index: 0;
+border-radius: 10px;
+opacity: 0;
+transition: ease-in-out .2s;
+}
+.training-card:hover::before{
+    opacity: 1;
+}
+.training-card-img{
+    position: relative;
+    z-index: 1;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+.content {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 3px solid #D8FB01;
+    padding-left: 5px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.training-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    background: rgb(216 251 1 / 8%);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+/* .training-card::before{
+    content: '';
+    opacity: 0;
+}
+.training-card:hover::before{
+    opacity: 1;
+} */
+.training-card-inner:hover {
+    opacity: 1;
+    transition: .3s ease-in;
+}
+
+/* training sec end */
+
+/* about start */
+.about {
+    background: #202737;
+
+}
+
+.about h6 {
+    color: #D8FB01;
+    font-weight: 600;
+}
+
+.about h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.about h2 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+.about p {
+    font-weight: 600;
+    color: #C0C0C0;
+}
+video {
+    border-radius: 10px;
+    /* clip-path: polygon(0 0, 93% 0%, 100% 0%, 100% 100%, 9% 100%, 0 79%); */
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+}
+
+video[poster] {
+    /* clip-path: polygon(0 0, 93% 0%, 100% 0%, 100% 100%, 9% 100%, 0 79%); */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+/* about end */
+
+/* book now start */
+.book-now {
+    background: url(../images/book-now-bg.png) no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 500px;
+}
+
+.book-now h6 {
+    color: #D8FB01;
+    font-weight: 600;
+}
+
+.book-now h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.book-now h2 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+.book-now p {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* book now end */
+
+/* testi start */
+.testi {
+    background: #2D3445;
+    padding: 50px 0 150px 0;
+}
+
+.testi-heading h6 {
+    color: #D8FB01;
+    font-weight: 600;
+}
+
+.testi-heading h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.testi-heading h2 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+.testi-card {
+    background: url(../images/testi-card-bg-1.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 70px 70px;
+    clip-path: polygon(0 0, 86% 0%, 100% 32%, 100% 100%, 16% 100%, 0 68%);
+}
+
+.testi-card h4 {
+    color: #D8FB01;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.testi-card h6 {
+    color: #C0C0C0;
+}
+
+.testi-card p {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+/* testi end */
+
+/* subscribe sec start */
+.subscribe{
+    background: #202737;
+}
+.subscribe-card {
+    text-align: center;
+    background: #D8FB01;
+    clip-path: polygon(0 0, 92% 0%, 100% 32%, 100% 100%, 8% 100%, 0 69%);
+    border-radius: 10px;
+    margin-top: -120px;
+}
+
+.subscribe h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #202737;
+}
+
+.subscribe p {
+    font-weight: 500;
+    color: #202737;
+}
+
+.subscribe-btn {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    background: #192030 !important;
+    color: #FFFFFF !important;
+    font-weight: 500;
+    border: 0;
+    border-radius: 0px;
+    padding: 7px 24px;
+}
+
+.subscribe-input {
+    border-radius: 0px;
+    padding: 15px 10px;
+}
+
+.subscribe-input::placeholder {
+    color: rgb(32 39 55 / 70%);
+    font-weight: 500;
+}
+
+.customInput {
+    border-radius: 0px;
+}
+
+.customInput:focus {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.customInput:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+.customInput::placeholder {
+    color: rgb(32 39 55 / 70%) !important;
+    font-weight: 500;
+}
+
+/* subscribe sec end */
+
+/* footer start */
+footer {
+    background: #202737;
+}
+
+hr {
+    border: 1px solid #FFFFFF;
+}
+
+/* footer end */

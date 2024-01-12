@@ -1,0 +1,132 @@
+@media screen and (max-width:1399.5px) {
+    .banner h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:991.5px) {
+    .navbar-collapse {
+        background: #202737;
+        padding: 20px;
+    }
+    .navbar-toggler{
+        border: 0;
+    }
+    .navbar-toggler i{
+        color: #D8FB01;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+.subscribe h3 {
+    font-size: 28px;
+}
+.customPrevBtn img,
+.customNextBtn img{
+    width: 50px;
+}
+}
+
+@media screen and (max-width:767.5px) {
+    .training-header h2 {
+        font-size: 40px;
+    }
+    .about h2 {
+        font-size: 40px;
+    }
+.book-now h2 {
+    font-size: 40px;
+}
+.testi-heading h2 {
+    font-size: 40px;
+}
+.subscribe-card {
+    clip-path: polygon(0 0, 87% 0%, 100% 10%, 100% 100%, 11% 100%, 0 89%);
+}
+.subscribe h3 {
+    font-size: 24px;
+}
+.banner {
+    padding: 50px 0 0px 0;
+}
+video {
+    height: 300px;
+}
+
+video[poster] {
+    height: 300px;
+}
+}
+
+@media screen and (max-width:575.5px) {
+    .banner h1 {
+        font-size: 51px;
+    }
+    .training-header h2 {
+        font-size: 35px;
+    }
+    .about h2 {
+        font-size: 35px;
+    }
+    .book-now h2 {
+        font-size: 35px;
+    }
+    .testi-heading h2 {
+        font-size: 35px;
+    }
+    .subscribe h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:460.5px) {
+    p, a, button{
+        font-size: 14px;
+    }
+    .banner h1 {
+        font-size: 38px;
+    }
+    .banner h6 {
+        font-size: 16px;
+    }
+.testi-card {
+    padding: 20px;
+    clip-path: none !important;
+}
+.subscribe-card {
+    clip-path: none;
+}
+.training-header h2 {
+    font-size: 25px;
+}
+.about h2 {
+    font-size: 25px;
+}
+.book-now h2 {
+    font-size: 25px;
+}
+.testi-heading h2 {
+    font-size: 25px;
+}.subscribe h3 {
+    font-size: 20px;
+}
+.subscribe-btn {
+    right: 3px;
+    top: 13px;
+    padding: 3px 13px;
+}
+.subscribe-input {
+   padding: 0px -5px;
+}
+.customInput::placeholder{font-size: 12px;}
+.input-group button{
+    font-size: 12px;
+}
+video {
+    height: 200px;
+}
+
+video[poster] {
+    height: 200px;
+}
+}
